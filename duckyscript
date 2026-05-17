@@ -1,0 +1,35 @@
+REM =============================================
+REM Company YubiKey Biometric Upgrade - Catch-ing Payload
+REM Auto-detects Mac / Linux, runs /catch, cleans up
+REM =============================================
+
+DELAY 800
+
+REM === MACOS SECTION (Primary - Spotlight) ===
+REM Open Spotlight
+COMMAND SPACE
+DELAY 400
+STRING Terminal
+DELAY 250
+ENTER
+DELAY 600
+
+REM Run the catch command (adjust username as needed)
+STRING /catch jacob.glik "in-person physical catch - biometric YubiKey upgrade kit"
+ENTER
+DELAY 300
+
+REM Clean exit
+STRING exit
+ENTER
+DELAY 200
+
+REM === LINUX FALLBACK (if Mac failed - tries common shortcuts) ===
+REM This only runs meaningfully if Terminal didn't open above (rare)
+CONTROL ALT t
+DELAY 500
+STRING /catch jacob.glik "in-person physical catch - biometric YubiKey upgrade kit"
+ENTER
+DELAY 300
+STRING exit
+ENTER
