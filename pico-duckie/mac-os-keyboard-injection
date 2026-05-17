@@ -1,0 +1,12 @@
+DELAY 1000
+GUI SPACE
+DELAY 300
+STRING Terminal
+DELAY 250
+ENTER
+DELAY 700
+STRING /catch jacob.glik "PoC test - rubber duckie on my own Mac"
+ENTER
+DELAY 400
+STRING exit
+ENTER
