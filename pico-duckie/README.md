@@ -49,3 +49,13 @@ This payload is designed for **linux** systems. When the Pico is plugged in, it 
 - Adjust DELAY values based on the target machine's speed.
 - Update the catch reason string for different scenarios.
 - For production use, consider disguising the Pico inside a YubiKey-style shell.
+
+<br>
+
+<br>
+
+---
+
+## Useful References
+
+- [BadUSB_Notes](https://github.com/svecile/BadUSB_Notes) — Good background on BadUSB theory and Windows examples.
